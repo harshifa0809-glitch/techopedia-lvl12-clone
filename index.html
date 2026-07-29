@@ -89,12 +89,13 @@
           <button class="btn-outline modal-btn" data-modal="modal-inquisitive">
             Know Details
           </button>
-          <button
-            class="btn-filled reg-btn"
-            data-modal="modal-register-inquisitive"
+          <!-- Replace 'YOUR_GOOGLE_FORM_URL' with your actual form link -->
+          <a
+            href="YOUR_GOOGLE_FORM_URL"
+            target="_blank"
+            class="btn-filled reg-link"
+            >Register</a
           >
-            Register
-          </button>
         </div>
       </div>
 
@@ -113,12 +114,12 @@
           <button class="btn-outline modal-btn" data-modal="modal-squabble">
             Know Details
           </button>
-          <button
-            class="btn-filled reg-btn"
-            data-modal="modal-register-squabble"
+          <a
+            href="YOUR_GOOGLE_FORM_URL"
+            target="_blank"
+            class="btn-filled reg-link"
+            >Register</a
           >
-            Register
-          </button>
         </div>
       </div>
 
@@ -137,12 +138,12 @@
           <button class="btn-outline modal-btn" data-modal="modal-warlash">
             Know Details
           </button>
-          <button
-            class="btn-filled reg-btn"
-            data-modal="modal-register-warlash"
+          <a
+            href="YOUR_GOOGLE_FORM_URL"
+            target="_blank"
+            class="btn-filled reg-link"
+            >Register</a
           >
-            Register
-          </button>
         </div>
       </div>
 
@@ -161,9 +162,12 @@
           <button class="btn-outline modal-btn" data-modal="modal-eureka">
             Know Details
           </button>
-          <button class="btn-filled reg-btn" data-modal="modal-register-eureka">
-            Register
-          </button>
+          <a
+            href="YOUR_GOOGLE_FORM_URL"
+            target="_blank"
+            class="btn-filled reg-link"
+            >Register</a
+          >
         </div>
       </div>
 
@@ -182,12 +186,12 @@
           <button class="btn-outline modal-btn" data-modal="modal-vendetta">
             Know Details
           </button>
-          <button
-            class="btn-filled reg-btn"
-            data-modal="modal-register-vendetta"
+          <a
+            href="YOUR_GOOGLE_FORM_URL"
+            target="_blank"
+            class="btn-filled reg-link"
+            >Register</a
           >
-            Register
-          </button>
         </div>
       </div>
     </main>
@@ -458,141 +462,6 @@
             </li>
           </ul>
         </div>
-      </div>
-    </div>
-
-    <!-- REGISTRATION POPUP MODAL (FORM) -->
-    <div id="modal-register-inquisitive" class="modal">
-      <div class="modal-content reg-modal">
-        <span class="close-btn">&times;</span>
-        <h2>Register for Inquisitive</h2>
-        <p class="reg-sub">
-          Fill out the details below to complete your registration.
-        </p>
-        <form
-          class="event-reg-form"
-          onsubmit="
-            alert('Registration Successful!');
-            event.preventDefault();
-          "
-        >
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="tel" placeholder="Phone / WhatsApp Number" required />
-          <input type="text" placeholder="College Name" required />
-          <input type="text" placeholder="Teammate Name (If Duo)" />
-          <button type="submit" class="submit-gradient-btn">
-            Proceed To Payment / Submit
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <div id="modal-register-squabble" class="modal">
-      <div class="modal-content reg-modal">
-        <span class="close-btn">&times;</span>
-        <h2>Register for Squabble</h2>
-        <p class="reg-sub">
-          Fill out the details below to complete your registration.
-        </p>
-        <form
-          class="event-reg-form"
-          onsubmit="
-            alert('Registration Successful!');
-            event.preventDefault();
-          "
-        >
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="tel" placeholder="Phone / WhatsApp Number" required />
-          <input type="text" placeholder="College Name" required />
-          <input type="text" placeholder="Teammate Name" required />
-          <button type="submit" class="submit-gradient-btn">
-            Proceed To Payment / Submit
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <div id="modal-register-warlash" class="modal">
-      <div class="modal-content reg-modal">
-        <span class="close-btn">&times;</span>
-        <h2>Register for Warlash</h2>
-        <p class="reg-sub">
-          Fill out the details below to complete your registration.
-        </p>
-        <form
-          class="event-reg-form"
-          onsubmit="
-            alert('Registration Successful!');
-            event.preventDefault();
-          "
-        >
-          <input type="text" placeholder="Team Leader Name" required />
-          <input type="email" placeholder="Leader Email Address" required />
-          <input type="tel" placeholder="WhatsApp Number" required />
-          <input type="text" placeholder="College Name" required />
-          <input type="text" placeholder="Teammate 2 Name" required />
-          <input type="text" placeholder="Teammate 3 Name" required />
-          <button type="submit" class="submit-gradient-btn">
-            Proceed To Payment / Submit
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <div id="modal-register-eureka" class="modal">
-      <div class="modal-content reg-modal">
-        <span class="close-btn">&times;</span>
-        <h2>Register for Eureka</h2>
-        <p class="reg-sub">
-          Fill out the details below to complete your registration.
-        </p>
-        <form
-          class="event-reg-form"
-          onsubmit="
-            alert('Registration Successful!');
-            event.preventDefault();
-          "
-        >
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="tel" placeholder="Phone / WhatsApp Number" required />
-          <input type="text" placeholder="College Name" required />
-          <input
-            type="text"
-            placeholder="Poster Topic / Abstract Title"
-            required
-          />
-          <button type="submit" class="submit-gradient-btn">
-            Proceed To Payment / Submit
-          </button>
-        </form>
-      </div>
-    </div>
-
-    <div id="modal-register-vendetta" class="modal">
-      <div class="modal-content reg-modal">
-        <span class="close-btn">&times;</span>
-        <h2>Register for Vendetta</h2>
-        <p class="reg-sub">
-          Fill out the details below to complete your registration.
-        </p>
-        <form
-          class="event-reg-form"
-          onsubmit="
-            alert('Registration Successful!');
-            event.preventDefault();
-          "
-        >
-          <input type="text" placeholder="Full Name" required />
-          <input type="email" placeholder="Email Address" required />
-          <input type="tel" placeholder="Phone / WhatsApp Number" required />
-          <input type="text" placeholder="College Name" required />
-          <button type="submit" class="submit-gradient-btn">
-            Proceed To Payment / Submit
-          </button>
-        </form>
       </div>
     </div>
 
