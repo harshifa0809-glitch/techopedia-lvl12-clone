@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // 1. Particle Background Canvas
+  // 1. Particle Canvas Background
   const canvas = document.getElementById("particleCanvas");
   if (canvas) {
     const ctx = canvas.getContext("2d");
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     animateParticles();
   }
 
-  // 2. 3D Mouse Tilt Effect
+  // 2. 3D Card Mouse Tilt Effect
   const eventCards = document.querySelectorAll(".event-card");
   eventCards.forEach((card) => {
     card.addEventListener("mousemove", (e) => {
@@ -146,7 +146,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 7. Modal Popups (Know Details Modals)
+  // 7. Modal Popups Logic
   const modalBtns = document.querySelectorAll(".modal-btn");
   const closeBtns = document.querySelectorAll(".close-btn");
 
@@ -171,7 +171,7 @@ document.addEventListener("DOMContentLoaded", () => {
     }
   });
 
-  // 8. Back to Top Floating Button Logic
+  // 8. Back to Top Button Logic
   const scrollTopBtn = document.getElementById("scrollTopBtn");
   window.onscroll = () => {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
