@@ -2,7 +2,7 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 body {
@@ -17,7 +17,6 @@ body {
   overflow-x: hidden;
 }
 
-/* Canvas Particles */
 #particleCanvas {
   position: fixed;
   top: 0;
@@ -28,7 +27,6 @@ body {
   pointer-events: none;
 }
 
-/* Header & Banner */
 .hero-header {
   text-align: center;
   max-width: 800px;
@@ -54,7 +52,7 @@ body {
 }
 
 .main-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 42px;
   font-weight: 800;
   letter-spacing: 1px;
@@ -66,7 +64,6 @@ body {
   text-shadow: 0 0 12px rgba(43, 232, 213, 0.5);
 }
 
-/* Countdown */
 .countdown-container {
   display: flex;
   justify-content: center;
@@ -85,7 +82,7 @@ body {
 }
 
 .timer-box span {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 20px;
   font-weight: bold;
   color: #2be8d5;
@@ -97,7 +94,6 @@ body {
   margin-top: 2px;
 }
 
-/* Search Bar */
 .search-container {
   position: relative;
   max-width: 450px;
@@ -130,7 +126,6 @@ body {
   box-shadow: 0 0 12px rgba(43, 232, 213, 0.3);
 }
 
-/* Filter Tabs */
 .filter-tabs {
   display: flex;
   justify-content: center;
@@ -157,7 +152,6 @@ body {
   box-shadow: 0 0 10px rgba(43, 232, 213, 0.4);
 }
 
-/* Cards Grid Container */
 .events-container {
   display: flex;
   justify-content: center;
@@ -178,7 +172,10 @@ body {
   flex-direction: column;
   align-items: center;
   text-align: center;
-  transition: transform 0.15s ease-out, border-color 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.15s ease-out,
+    border-color 0.3s ease,
+    box-shadow 0.3s ease;
   transform-style: preserve-3d;
   perspective: 1000px;
 }
@@ -203,7 +200,7 @@ body {
 }
 
 .event-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 18px;
   font-weight: 600;
   margin-bottom: 10px;
@@ -257,7 +254,7 @@ body {
   background-color: #24caa3;
 }
 
-/* TIMELINE SECTION (Cyan Glowing Match) */
+/* Timeline */
 .timeline-section {
   width: 100%;
   max-width: 900px;
@@ -275,7 +272,7 @@ body {
 }
 
 .timeline-title {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 26px;
   color: #ffffff;
   margin-bottom: 50px;
@@ -353,13 +350,13 @@ body {
 }
 
 .timeline-content h3 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 14px;
   color: #ffffff;
   letter-spacing: 1px;
 }
 
-/* FAQ SECTION (Cyan Theme Match) */
+/* FAQ */
 .faq-section {
   width: 100%;
   max-width: 800px;
@@ -368,7 +365,7 @@ body {
 }
 
 .faq-heading {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   text-align: center;
   font-size: 22px;
   color: #ffffff;
@@ -434,7 +431,7 @@ body {
   color: #0b0f15;
 }
 
-/* FOOTER SECTION (Cyan Theme Match) */
+/* Footer */
 .main-footer {
   width: 100%;
   background: #070a0e;
@@ -452,7 +449,7 @@ body {
 }
 
 .footer-logo {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   font-size: 20px;
   color: #ffffff;
   line-height: 1.2;
@@ -477,7 +474,7 @@ body {
 }
 
 .footer-title::after {
-  content: '';
+  content: "";
   position: absolute;
   left: 0;
   bottom: -6px;
@@ -555,7 +552,7 @@ body {
   cursor: pointer;
 }
 
-/* Modals */
+/* MODAL STYLING (NEW & ENHANCED) */
 .modal {
   display: none;
   position: fixed;
@@ -578,23 +575,72 @@ body {
   border: 1px solid #2be8d5;
   padding: 30px;
   border-radius: 12px;
-  max-width: 450px;
+  max-width: 500px;
   width: 90%;
   position: relative;
-  text-align: center;
+  text-align: left;
   box-shadow: 0 0 25px rgba(43, 232, 213, 0.35);
 }
 
 .modal-content h2 {
-  font-family: 'Orbitron', sans-serif;
+  font-family: "Orbitron", sans-serif;
   color: #2be8d5;
+  margin-bottom: 15px;
+  text-align: center;
+}
+
+.modal-body p {
+  color: #cbd5e1;
+  font-size: 13px;
+  line-height: 1.6;
   margin-bottom: 15px;
 }
 
-.modal-content p {
-  color: #cbd5e1;
-  font-size: 14px;
-  line-height: 1.6;
+.modal-list {
+  list-style: none;
+  background: #0d121a;
+  padding: 15px;
+  border-radius: 8px;
+  border: 1px solid #1a2634;
+}
+
+.modal-list li {
+  color: #94a3b8;
+  font-size: 12px;
+  margin-bottom: 8px;
+}
+
+.modal-list li strong {
+  color: #2be8d5;
+}
+
+/* Registration Form Popup Styling */
+.reg-modal .reg-sub {
+  font-size: 12px;
+  color: #94a3b8;
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.event-reg-form {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.event-reg-form input {
+  width: 100%;
+  padding: 10px 14px;
+  background-color: #0b0f15;
+  border: 1px solid #1a2634;
+  border-radius: 6px;
+  color: #ffffff;
+  font-size: 13px;
+  outline: none;
+}
+
+.event-reg-form input:focus {
+  border-color: #2be8d5;
 }
 
 .close-btn {
@@ -606,7 +652,10 @@ body {
   cursor: pointer;
 }
 
-/* Scroll To Top Button */
+.close-btn:hover {
+  color: #fff;
+}
+
 #scrollTopBtn {
   display: none;
   position: fixed;
@@ -630,9 +679,22 @@ body {
 }
 
 @media (max-width: 768px) {
-  .timeline-line { left: 20px; }
-  .timeline-item { width: 100%; padding-left: 50px !important; text-align: left !important; }
-  .timeline-item.right { left: 0; }
-  .timeline-item.left .timeline-dot, .timeline-item.right .timeline-dot { left: 12px; }
-  .footer-container { grid-template-columns: 1fr; }
+  .timeline-line {
+    left: 20px;
+  }
+  .timeline-item {
+    width: 100%;
+    padding-left: 50px !important;
+    text-align: left !important;
+  }
+  .timeline-item.right {
+    left: 0;
+  }
+  .timeline-item.left .timeline-dot,
+  .timeline-item.right .timeline-dot {
+    left: 12px;
+  }
+  .footer-container {
+    grid-template-columns: 1fr;
+  }
 }
