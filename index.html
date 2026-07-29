@@ -14,15 +14,20 @@
     />
   </head>
   <body id="top">
-    <!-- 3D Particle Canvas Background -->
+    <!-- Background Particles -->
     <canvas id="particleCanvas"></canvas>
 
     <!-- Header Section -->
     <header class="hero-header">
       <div class="banner-box">
+        <!-- Main Hero Logo Image -->
         <img
           src="Hero_banner.png"
-          alt="Techopedia Pixels Logo"
+          onerror="
+            this.onerror = null;
+            this.src = 'download.png';
+          "
+          alt="Techopedia Banner Logo"
           class="hero-banner-img"
         />
       </div>
@@ -52,7 +57,7 @@
         </div>
       </div>
 
-      <!-- Live Search Bar -->
+      <!-- Search Bar -->
       <div class="search-container">
         <span class="search-icon">🔍</span>
         <input
@@ -63,7 +68,7 @@
         />
       </div>
 
-      <!-- Filter Tabs -->
+      <!-- Category Filters -->
       <div class="filter-tabs">
         <button class="tab-btn active" data-category="all">All Events</button>
         <button class="tab-btn" data-category="quiz">Quizzes</button>
@@ -89,7 +94,6 @@
           <button class="btn-outline modal-btn" data-modal="modal-inquisitive">
             Know Details
           </button>
-          <!-- Apna Google Form link href me replace karein -->
           <a
             href="YOUR_GOOGLE_FORM_URL"
             target="_blank"
@@ -240,7 +244,7 @@
       </div>
     </section>
 
-    <!-- FAQ ACCORDION SECTION -->
+    <!-- FAQ SECTION -->
     <section class="faq-section" id="FAQ">
       <h2 class="faq-heading">Frequently Asked Questions</h2>
       <div class="faq-container">
@@ -297,12 +301,16 @@
       </div>
     </section>
 
-    <!-- Main Footer Section -->
+    <!-- FOOTER SECTION -->
     <footer class="main-footer" id="Contact">
       <div class="footer-container">
         <div class="footer-col">
           <img
             src="Hero_banner.png"
+            onerror="
+              this.onerror = null;
+              this.src = 'download.png';
+            "
             alt="Techopedia Logo"
             class="footer-banner-img"
           />
@@ -350,7 +358,7 @@
       </div>
     </footer>
 
-    <!-- DETAILED KNOW DETAILS MODALS -->
+    <!-- EVENT DETAILS MODALS -->
     <div id="modal-inquisitive" class="modal">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
@@ -467,7 +475,7 @@
       </div>
     </div>
 
-    <!-- Scroll To Top Button -->
+    <!-- Floating Top Scroll Button -->
     <button id="scrollTopBtn" title="Go to top">⬆</button>
 
     <script src="script.js"></script>
