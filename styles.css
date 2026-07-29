@@ -254,6 +254,13 @@ body {
   background-color: #24caa3;
 }
 
+.reg-link {
+  text-decoration: none;
+  display: inline-block;
+  text-align: center;
+  line-height: 18px;
+}
+
 /* Timeline */
 .timeline-section {
   width: 100%;
@@ -552,7 +559,7 @@ body {
   cursor: pointer;
 }
 
-/* MODAL STYLING (NEW & ENHANCED) */
+/* Modals Styling */
 .modal {
   display: none;
   position: fixed;
@@ -612,35 +619,6 @@ body {
 
 .modal-list li strong {
   color: #2be8d5;
-}
-
-/* Registration Form Popup Styling */
-.reg-modal .reg-sub {
-  font-size: 12px;
-  color: #94a3b8;
-  text-align: center;
-  margin-bottom: 20px;
-}
-
-.event-reg-form {
-  display: flex;
-  flex-direction: column;
-  gap: 12px;
-}
-
-.event-reg-form input {
-  width: 100%;
-  padding: 10px 14px;
-  background-color: #0b0f15;
-  border: 1px solid #1a2634;
-  border-radius: 6px;
-  color: #ffffff;
-  font-size: 13px;
-  outline: none;
-}
-
-.event-reg-form input:focus {
-  border-color: #2be8d5;
 }
 
 .close-btn {
