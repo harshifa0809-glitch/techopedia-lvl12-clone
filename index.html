@@ -1,0 +1,385 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techopedia Lvl 12 | IEEE SIESGST</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;700;900&family=Poppins:wght@300;400;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body id="top">
+    <!-- Header / Navbar -->
+    <header class="navbar">
+      <div class="container nav-container">
+        <a href="#top" class="logo">
+          <img src="assets/images/pixels.png" alt="Techopedia Logo" />
+        </a>
+        <nav>
+          <ul class="nav-links">
+            <li><a href="#top">Home</a></li>
+            <li><a href="#tournament">Events</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </nav>
+        <a href="#tournament" class="btn btn-primary">Register</a>
+      </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero">
+      <div class="container hero-container">
+        <p class="tagline">IMMERSE • CONQUER • THRIVE</p>
+        <h1 class="hero-title">Techopedia Lvl 12</h1>
+        <p class="subtitle">Beyond the console</p>
+
+        <!-- EXTRA FEATURE 1: Live Event Countdown Timer -->
+        <div class="countdown-container">
+          <h3>Event Begins In:</h3>
+          <div id="timer" class="timer-grid">
+            <div class="time-box">
+              <span id="days">00</span>
+              <p>Days</p>
+            </div>
+            <div class="time-box">
+              <span id="hours">00</span>
+              <p>Hours</p>
+            </div>
+            <div class="time-box">
+              <span id="minutes">00</span>
+              <p>Mins</p>
+            </div>
+            <div class="time-box">
+              <span id="seconds">00</span>
+              <p>Secs</p>
+            </div>
+          </div>
+        </div>
+
+        <a href="#tournament" class="btn btn-glow">Explore Events</a>
+        <div class="hero-banner">
+          <img src="assets/images/hero-banner.png" alt="Hero Banner" />
+        </div>
+      </div>
+    </section>
+
+    <!-- Events Section -->
+    <section id="tournament" class="events-section">
+      <div class="container">
+        <p class="section-tag">Techopedia Lvl 12 Events</p>
+        <h2 class="section-title">Beyond the <span>Console</span></h2>
+
+        <!-- EXTRA FEATURE 4: Live Search Bar -->
+        <div class="search-box">
+          <input
+            type="text"
+            id="eventSearch"
+            placeholder="🔍 Search events (e.g. Warlash, Quiz)..."
+          />
+        </div>
+
+        <!-- EXTRA FEATURE 2: Dynamic Category Filter Tabs -->
+        <div class="filter-tabs">
+          <button class="tab-btn active" data-category="all">All Events</button>
+          <button class="tab-btn" data-category="quiz">Quizzes</button>
+          <button class="tab-btn" data-category="coding">
+            Gaming & Coding
+          </button>
+          <button class="tab-btn" data-category="flagship">Flagship</button>
+        </div>
+
+        <div class="events-grid" id="eventsGrid">
+          <div class="event-card" data-category="quiz" data-title="inquisitive">
+            <img src="assets/images/inquisitive-small.png" alt="Inquisitive" />
+            <h3>Inquisitive</h3>
+            <p class="card-desc">The ultimate technical quiz competition.</p>
+            <button
+              class="btn btn-card modal-btn"
+              data-modal="modal-inquisitive"
+            >
+              Know Details
+            </button>
+            <a
+              href="https://forms.gle/1uttrMFFUuz4ajYN8"
+              target="_blank"
+              class="btn btn-primary-sm"
+              >Register</a
+            >
+          </div>
+
+          <div class="event-card" data-category="quiz" data-title="squabble">
+            <img src="assets/images/squabble-small.png" alt="Squabble" />
+            <h3>Squabble</h3>
+            <p class="card-desc">Fast-paced debate and trivia battle.</p>
+            <button class="btn btn-card modal-btn" data-modal="modal-squabble">
+              Know Details
+            </button>
+            <a
+              href="https://forms.gle/p3biftKS1mUfa77v9"
+              target="_blank"
+              class="btn btn-primary-sm"
+              >Register</a
+            >
+          </div>
+
+          <div class="event-card" data-category="coding" data-title="warlash">
+            <img src="assets/images/warlash-small.png" alt="Warlash" />
+            <h3>Warlash</h3>
+            <p class="card-desc">Competitive LAN & coding tournament.</p>
+            <button class="btn btn-card modal-btn" data-modal="modal-warlash">
+              Know Details
+            </button>
+            <a
+              href="https://forms.gle/s8TpDcXYowmkp6nZ6"
+              target="_blank"
+              class="btn btn-primary-sm"
+              >Register</a
+            >
+          </div>
+
+          <div class="event-card" data-category="flagship" data-title="eureka">
+            <img
+              src="assets/images/poster-presentation-small.png"
+              alt="Eureka"
+            />
+            <h3>Eureka</h3>
+            <p class="card-desc">National-level poster presentation.</p>
+            <button class="btn btn-card modal-btn" data-modal="modal-eureka">
+              Know Details
+            </button>
+            <a
+              href="https://forms.gle/1NeGsbgxM2SqwW6s8"
+              target="_blank"
+              class="btn btn-primary-sm"
+              >Register</a
+            >
+          </div>
+
+          <div
+            class="event-card featured"
+            data-category="flagship"
+            data-title="vendetta"
+          >
+            <img src="assets/images/vendetta-small.png" alt="Vendetta" />
+            <h3>Vendetta</h3>
+            <p class="card-desc">The Grand Final Showdown Event.</p>
+            <span class="badge">Final Event</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- EXTRA FEATURE 3: Modal Popups for Event Details -->
+    <div id="modal-inquisitive" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Inquisitive - Tech Quiz</h2>
+        <p><strong>Team Size:</strong> 2 Members</p>
+        <p><strong>Fee:</strong> Rs. 80 per team</p>
+        <p>
+          <strong>Prizes:</strong> Cash Prizes + Certificates for all
+          participants.
+        </p>
+        <a
+          href="https://forms.gle/1uttrMFFUuz4ajYN8"
+          target="_blank"
+          class="btn btn-primary"
+          >Register Now</a
+        >
+      </div>
+    </div>
+
+    <div id="modal-squabble" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Squabble - Debate & Trivia</h2>
+        <p><strong>Team Size:</strong> 2 Members</p>
+        <p><strong>Fee:</strong> Rs. 80 per team</p>
+        <p><strong>Prizes:</strong> Vouchers + Certificates.</p>
+        <a
+          href="https://forms.gle/p3biftKS1mUfa77v9"
+          target="_blank"
+          class="btn btn-primary"
+          >Register Now</a
+        >
+      </div>
+    </div>
+
+    <div id="modal-warlash" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Warlash - Gaming Battle</h2>
+        <p><strong>Team Size:</strong> 3 Members</p>
+        <p><strong>Fee:</strong> Rs. 180 per team (On-spot available)</p>
+        <p><strong>Prizes:</strong> Huge Cash Prize Pool + Trophy.</p>
+        <a
+          href="https://forms.gle/s8TpDcXYowmkp6nZ6"
+          target="_blank"
+          class="btn btn-primary"
+          >Register Now</a
+        >
+      </div>
+    </div>
+
+    <div id="modal-eureka" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Eureka - Poster Presentation</h2>
+        <p><strong>Team Size:</strong> 2 Members</p>
+        <p><strong>Fee:</strong> Rs. 80 per team</p>
+        <p>
+          <strong>Prizes:</strong> National Level Certificates & Recognition.
+        </p>
+        <a
+          href="https://forms.gle/1NeGsbgxM2SqwW6s8"
+          target="_blank"
+          class="btn btn-primary"
+          >Register Now</a
+        >
+      </div>
+    </div>
+
+    <!-- Timeline Section -->
+    <section id="timeline" class="timeline-section">
+      <div class="container">
+        <p class="section-tag">The Adventure Slate</p>
+        <h2 class="section-title">Event Highlights & <span>Timeline</span></h2>
+        <div class="timeline-list">
+          <div class="timeline-item">
+            <span class="date">18-01-2024</span>
+            <h3>REGISTRATION STARTS</h3>
+          </div>
+          <div class="timeline-item">
+            <span class="date">31-01-2024</span>
+            <h3>REGISTRATION ENDS</h3>
+          </div>
+          <div class="timeline-item">
+            <span class="date">01-02-2024</span>
+            <h3>INAUGURATION</h3>
+          </div>
+          <div class="timeline-item">
+            <span class="date">02-02-2024 & 03-02-2024</span>
+            <h3>FUN EVENTS AND MORE</h3>
+          </div>
+          <div class="timeline-item">
+            <span class="date">03-02-2024</span>
+            <h3>CLOSING CEREMONY</h3>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section id="faq" class="faq-section">
+      <div class="container">
+        <p class="section-tag">Understand us better</p>
+        <h2 class="section-title">Frequently Asked <span>Questions</span></h2>
+        <div class="faq-accordion">
+          <div class="faq-item">
+            <button class="faq-question">What is Techopedia Lvl 12?</button>
+            <div class="faq-answer">
+              <p>
+                Techopedia Level 12 marks the twelfth edition of IEEE SIES GST's
+                annual technical fest.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What does the theme 'PIXELS' imply?
+            </button>
+            <div class="faq-answer">
+              <p>The theme revolves around the exciting world of gaming.</p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">
+              What are the benefits of participating in these events?
+            </button>
+            <div class="faq-answer">
+              <p>
+                Participation increases your chances of winning cash prizes,
+                coupons, goodies, national-level certificates, and more!
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">What is the registration fee?</button>
+            <div class="faq-answer">
+              <p>
+                The Registration Fee is Rs. 80 for a team of two in Squabble,
+                Inquisitive & Eureka, and Rs. 180 for a team of three in
+                Warlash.
+              </p>
+            </div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-question">Is On-day registration open?</button>
+            <div class="faq-answer">
+              <p>On-day registration is available for WarLash!</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="contact" class="footer">
+      <div class="container footer-content">
+        <div class="footer-col">
+          <img
+            src="assets/images/pixels.png"
+            alt="IEEE SIESGST Logo"
+            class="footer-logo"
+          />
+          <p>
+            IEEE SIESGST, a dynamic and innovative student branch offering a
+            diverse platform for learning, collaboration, and personal growth.
+          </p>
+        </div>
+        <div class="footer-col">
+          <h4>Explore</h4>
+          <ul>
+            <li><a href="#top">Home</a></li>
+            <li><a href="#tournament">Events</a></li>
+            <li><a href="#timeline">Timeline</a></li>
+            <li><a href="#faq">FAQ</a></li>
+            <li><a href="#contact">Contact</a></li>
+          </ul>
+        </div>
+        <div class="footer-col">
+          <h4>Contact Us</h4>
+          <p>
+            <strong>Location:</strong> SIES Graduate School of Technology,
+            Nerul, Navi Mumbai
+          </p>
+          <p>
+            <strong>Email:</strong>
+            <a href="mailto:ieee@siesgst.ac.in">ieee@siesgst.ac.in</a>
+          </p>
+          <p>
+            <strong>LinkTree:</strong>
+            <a href="https://linktr.ee/ieeesiesgst" target="_blank"
+              >IEEE SIESGST</a
+            >
+          </p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>
+          © IEEE SIESGST 2023-24 | Made with ♥ by IEEE SIESGST Technical Team
+        </p>
+      </div>
+    </footer>
+
+    <a href="#top" class="back-to-top">↑</a>
+
+    <script src="script.js"></script>
+  </body>
+</html>
