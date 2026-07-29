@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     animateParticles();
   }
 
-  // 2. 3D Mouse Tilt Effect on Event Cards
+  // 2. 3D Mouse Tilt Effect
   const eventCards = document.querySelectorAll(".event-card");
   eventCards.forEach((card) => {
     card.addEventListener("mousemove", (e) => {
@@ -72,7 +72,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 3. FAQ Accordion Toggle (Cyan Theme)
+  // 3. FAQ Accordion Toggle
   const faqBtns = document.querySelectorAll(".faq-btn");
   faqBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
@@ -84,7 +84,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 4. Countdown Timer Logic (Target: Feb 1, 2027)
+  // 4. Countdown Timer Logic
   const targetDate = new Date("Feb 1, 2027 00:00:00").getTime();
   setInterval(() => {
     const now = new Date().getTime();
@@ -146,8 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 7. Modal Popups Logic
-  const modalBtns = document.querySelectorAll(".modal-btn");
+  // 7. Modal Popups (Know Details + Register Forms)
+  const modalBtns = document.querySelectorAll(".modal-btn, .reg-btn");
   const closeBtns = document.querySelectorAll(".close-btn");
 
   modalBtns.forEach((btn) => {
@@ -163,6 +163,12 @@ document.addEventListener("DOMContentLoaded", () => {
       const modal = btn.closest(".modal");
       if (modal) modal.classList.remove("active");
     });
+  });
+
+  window.addEventListener("click", (e) => {
+    if (e.target.classList.contains("modal")) {
+      e.target.classList.remove("active");
+    }
   });
 
   // 8. Back to Top Floating Button Logic
