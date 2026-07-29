@@ -17,12 +17,12 @@
     <!-- 3D Particle Canvas Background -->
     <canvas id="particleCanvas"></canvas>
 
-    <!-- Top Banner & Header -->
+    <!-- Header Section -->
     <header class="hero-header">
       <div class="banner-box">
         <img
           src="Hero_banner.png"
-          alt="Techopedia Logo"
+          alt="Techopedia Banner Logo"
           class="hero-banner-img"
         />
       </div>
@@ -32,7 +32,7 @@
         Beyond the <span class="cyan-text">Console</span>
       </h1>
 
-      <!-- Live Countdown Timer -->
+      <!-- Countdown Timer -->
       <div class="countdown-container">
         <div class="timer-box">
           <span id="days">00</span>
@@ -63,7 +63,7 @@
         />
       </div>
 
-      <!-- Category Filter Tabs -->
+      <!-- Filter Tabs -->
       <div class="filter-tabs">
         <button class="tab-btn active" data-category="all">All Events</button>
         <button class="tab-btn" data-category="quiz">Quizzes</button>
@@ -72,8 +72,8 @@
       </div>
     </header>
 
-    <!-- Interactive 3D Event Cards Grid -->
-    <main class="events-container">
+    <!-- Event Cards Grid (With 3D Tilt Effect) -->
+    <main class="events-container" id="events">
       <!-- Card 1: Inquisitive -->
       <div
         class="event-card"
@@ -170,52 +170,53 @@
       </div>
     </main>
 
-    <!-- FAQ Accordion Section (Original Cyan Theme) -->
-    <section class="faq-section" id="FAQ">
+    <!-- FAQ Accordion Section -->
+    <section class="purple-faq-section" id="FAQ">
       <h2 class="faq-heading">Frequently Asked Questions</h2>
       <div class="faq-container">
-        <div class="faq-item">
-          <button class="faq-question">
+        <div class="purple-faq-item">
+          <button class="purple-faq-btn">
             <span>What are the benefits of participating in these events?</span>
             <span class="circle-arrow">∨</span>
           </button>
-          <div class="faq-answer">
+          <div class="purple-faq-ans">
             <p>
-              You get certificates, networking opportunities, cash prizes, and
-              hands-on experience!
+              You get official participation certificates, networking
+              opportunities with industry mentors, cash prizes, and hands-on
+              exposure!
             </p>
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question">
+        <div class="purple-faq-item">
+          <button class="purple-faq-btn">
             <span>What is the registration fee?</span>
             <span class="circle-arrow">∨</span>
           </button>
-          <div class="faq-answer">
+          <div class="purple-faq-ans">
             <p>
-              Registration fees vary by event. Check the individual event
-              details for exact pricing.
+              Registration fees vary by event category. Click on 'Know Details'
+              for each event to check pricing details.
             </p>
           </div>
         </div>
 
-        <div class="faq-item">
-          <button class="faq-question">
+        <div class="purple-faq-item">
+          <button class="purple-faq-btn">
             <span>Is On-day registration open?</span>
             <span class="circle-arrow">∨</span>
           </button>
-          <div class="faq-answer">
+          <div class="purple-faq-ans">
             <p>
-              Yes, on-spot registrations will be open subject to seat
-              availability.
+              Yes, on-spot registrations will be open subject to slot
+              availability on the event day.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- Matching Cyan Dark Footer Section -->
+    <!-- Main Footer Section -->
     <footer class="main-footer" id="Contact">
       <div class="footer-container">
         <!-- Column 1: Info -->
@@ -225,8 +226,9 @@
           </h2>
           <p class="footer-desc">
             <strong>IEEE SIESGST</strong>, a dynamic and innovative student
-            branch of the IEEE. With subchapters dedicated to MTTS, CS and WiE,
-            we offer a diverse platform for learning and collaboration.
+            branch of IEEE. With subchapters dedicated to MTTS, CS and WiE, we
+            offer a diverse platform for learning, collaboration, and
+            technology.
           </p>
         </div>
 
@@ -236,13 +238,12 @@
           <ul class="footer-links">
             <li><a href="#top">Home</a></li>
             <li><a href="#events">Events</a></li>
-            <li><a href="#timeline">Timeline</a></li>
             <li><a href="#FAQ">FAQ</a></li>
             <li><a href="#Contact">Contact</a></li>
           </ul>
         </div>
 
-        <!-- Column 3: Contact Us -->
+        <!-- Column 3: Contact Details -->
         <div class="footer-col">
           <h3 class="footer-title">Contact Us</h3>
           <div class="contact-details">
@@ -255,7 +256,7 @@
           </div>
         </div>
 
-        <!-- Column 4: Help / Query -->
+        <!-- Column 4: Query Box -->
         <div class="footer-col">
           <h3 class="footer-title">How can we help ?</h3>
           <form class="help-form" onsubmit="event.preventDefault()">
@@ -269,40 +270,40 @@
       </div>
     </footer>
 
-    <!-- Modal Details Popups -->
+    <!-- Detail Modals -->
     <div id="modal-inquisitive" class="modal">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
         <h2>Inquisitive</h2>
-        <p>Technical quiz competition testing core CS & IT knowledge!</p>
+        <p>Technical quiz competition testing core CS & IT skills!</p>
       </div>
     </div>
     <div id="modal-squabble" class="modal">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
         <h2>Squabble</h2>
-        <p>Fast-paced debate and trivia battle event!</p>
+        <p>Fast-paced debate and trivia showdown!</p>
       </div>
     </div>
     <div id="modal-warlash" class="modal">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
         <h2>Warlash</h2>
-        <p>Competitive LAN gaming & coding tournament!</p>
+        <p>Competitive LAN gaming & competitive coding event!</p>
       </div>
     </div>
     <div id="modal-eureka" class="modal">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
         <h2>Eureka</h2>
-        <p>National-level poster presentation event!</p>
+        <p>National-level poster presentation event showcase!</p>
       </div>
     </div>
     <div id="modal-vendetta" class="modal">
       <div class="modal-content">
         <span class="close-btn">&times;</span>
         <h2>Vendetta</h2>
-        <p>Grand Finale Showdown Event!</p>
+        <p>The Grand Finale Showdown Event!</p>
       </div>
     </div>
 
