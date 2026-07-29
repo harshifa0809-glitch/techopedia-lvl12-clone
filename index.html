@@ -14,20 +14,26 @@
     />
   </head>
   <body id="top">
-    <!-- Background Particles -->
+    <!-- 3D Particle Canvas Background -->
     <canvas id="particleCanvas"></canvas>
 
     <!-- Header Section -->
     <header class="hero-header">
       <div class="banner-box">
-        <!-- Main Hero Logo Image -->
+        <!-- Banner Logo with Multi-Fallback Pathing -->
         <img
           src="Hero_banner.png"
           onerror="
             this.onerror = null;
             this.src = 'download.png';
+            this.onerror = function () {
+              this.src = 'logo.png';
+              this.onerror = function () {
+                this.src = 'Hero_banner.jpg';
+              };
+            };
           "
-          alt="Techopedia Banner Logo"
+          alt="Techopedia Pixels Logo"
           class="hero-banner-img"
         />
       </div>
@@ -68,7 +74,7 @@
         />
       </div>
 
-      <!-- Category Filters -->
+      <!-- Filter Tabs -->
       <div class="filter-tabs">
         <button class="tab-btn active" data-category="all">All Events</button>
         <button class="tab-btn" data-category="quiz">Quizzes</button>
@@ -95,7 +101,7 @@
             Know Details
           </button>
           <a
-            href="YOUR_GOOGLE_FORM_URL"
+            href="https://forms.google.com"
             target="_blank"
             class="btn-filled reg-link"
             >Register</a
@@ -119,7 +125,7 @@
             Know Details
           </button>
           <a
-            href="YOUR_GOOGLE_FORM_URL"
+            href="https://forms.google.com"
             target="_blank"
             class="btn-filled reg-link"
             >Register</a
@@ -143,7 +149,7 @@
             Know Details
           </button>
           <a
-            href="YOUR_GOOGLE_FORM_URL"
+            href="https://forms.google.com"
             target="_blank"
             class="btn-filled reg-link"
             >Register</a
@@ -167,7 +173,7 @@
             Know Details
           </button>
           <a
-            href="YOUR_GOOGLE_FORM_URL"
+            href="https://forms.google.com"
             target="_blank"
             class="btn-filled reg-link"
             >Register</a
@@ -191,7 +197,7 @@
             Know Details
           </button>
           <a
-            href="YOUR_GOOGLE_FORM_URL"
+            href="https://forms.google.com"
             target="_blank"
             class="btn-filled reg-link"
             >Register</a
@@ -244,7 +250,7 @@
       </div>
     </section>
 
-    <!-- FAQ SECTION -->
+    <!-- FAQ ACCORDION SECTION -->
     <section class="faq-section" id="FAQ">
       <h2 class="faq-heading">Frequently Asked Questions</h2>
       <div class="faq-container">
@@ -310,6 +316,12 @@
             onerror="
               this.onerror = null;
               this.src = 'download.png';
+              this.onerror = function () {
+                this.src = 'logo.png';
+                this.onerror = function () {
+                  this.src = 'Hero_banner.jpg';
+                };
+              };
             "
             alt="Techopedia Logo"
             class="footer-banner-img"
@@ -475,7 +487,6 @@
       </div>
     </div>
 
-    <!-- Floating Top Scroll Button -->
     <button id="scrollTopBtn" title="Go to top">⬆</button>
 
     <script src="script.js"></script>
