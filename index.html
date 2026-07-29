@@ -13,14 +13,23 @@
       rel="stylesheet"
     />
   </head>
-  <body>
+  <body id="top">
+
+    <!-- Interactive Particle Canvas Background -->
+    <canvas id="particleCanvas"></canvas>
+
+    <!-- Top Banner & Header -->
     <header class="hero-header">
+      <div class="banner-box">
+        <img src="Hero_banner.png" alt="Techopedia Logo" class="hero-banner-img" />
+      </div>
+
       <p class="subtitle">TECHOPEDIA LVL 12 EVENTS</p>
       <h1 class="main-title">
         Beyond the <span class="cyan-text">Console</span>
       </h1>
 
-      <!-- Live Countdown Timer -->
+      <!-- Countdown Timer -->
       <div class="countdown-container">
         <div class="timer-box"><span id="days">00</span><p>Days</p></div>
         <div class="timer-box"><span id="hours">00</span><p>Hours</p></div>
@@ -39,7 +48,7 @@
         />
       </div>
 
-      <!-- Filter Tabs -->
+      <!-- Category Filter Tabs -->
       <div class="filter-tabs">
         <button class="tab-btn active" data-category="all">All Events</button>
         <button class="tab-btn" data-category="quiz">Quizzes</button>
@@ -48,75 +57,162 @@
       </div>
     </header>
 
-    <!-- Main Cards Container -->
+    <!-- Main Events Cards -->
     <main class="events-container">
       
       <!-- Card 1: Inquisitive -->
       <div class="event-card" data-category="quiz" data-title="inquisitive quiz">
+        <span class="card-badge">Solo / Duo</span>
         <div class="card-image-box">
           <img src="download1.png" alt="Inquisitive" />
         </div>
         <h3 class="event-title">Inquisitive</h3>
         <p class="event-desc">The ultimate technical quiz competition.</p>
         <div class="btn-group">
-          <button class="btn-outline">Know Details</button>
+          <button class="btn-outline modal-btn" data-modal="modal-inquisitive">Know Details</button>
           <button class="btn-filled">Register</button>
         </div>
       </div>
 
       <!-- Card 2: Squabble -->
       <div class="event-card" data-category="quiz" data-title="squabble debate trivia">
+        <span class="card-badge">Team of 2</span>
         <div class="card-image-box">
           <img src="Squabble.png" alt="Squabble" />
         </div>
         <h3 class="event-title">Squabble</h3>
         <p class="event-desc">Fast-paced debate and trivia battle.</p>
         <div class="btn-group">
-          <button class="btn-outline">Know Details</button>
+          <button class="btn-outline modal-btn" data-modal="modal-squabble">Know Details</button>
           <button class="btn-filled">Register</button>
         </div>
       </div>
 
       <!-- Card 3: Warlash -->
       <div class="event-card" data-category="gaming" data-title="warlash gaming coding lan">
+        <span class="card-badge">Squad (LAN)</span>
         <div class="card-image-box">
           <img src="download2.png" alt="Warlash" />
         </div>
         <h3 class="event-title">Warlash</h3>
         <p class="event-desc">Competitive LAN & coding tournament.</p>
         <div class="btn-group">
-          <button class="btn-outline">Know Details</button>
+          <button class="btn-outline modal-btn" data-modal="modal-warlash">Know Details</button>
           <button class="btn-filled">Register</button>
         </div>
       </div>
 
       <!-- Card 4: Eureka -->
       <div class="event-card highlight-glow" data-category="flagship" data-title="eureka poster presentation">
+        <span class="card-badge featured">Flagship Event</span>
         <div class="card-image-box">
           <img src="download3.png" alt="Eureka" />
         </div>
         <h3 class="event-title">Eureka</h3>
         <p class="event-desc">National-level poster presentation.</p>
         <div class="btn-group">
-          <button class="btn-outline">Know Details</button>
+          <button class="btn-outline modal-btn" data-modal="modal-eureka">Know Details</button>
           <button class="btn-filled">Register</button>
         </div>
       </div>
 
       <!-- Card 5: Vendetta -->
       <div class="event-card" data-category="gaming" data-title="vendetta grand final">
+        <span class="card-badge">Grand Finale</span>
         <div class="card-image-box">
           <img src="download4.png" alt="Vendetta" />
         </div>
         <h3 class="event-title">Vendetta</h3>
         <p class="event-desc">The Grand Final Showdown Event.</p>
         <div class="btn-group">
-          <button class="btn-outline">Know Details</button>
+          <button class="btn-outline modal-btn" data-modal="modal-vendetta">Know Details</button>
           <button class="btn-filled">Register</button>
         </div>
       </div>
 
     </main>
+
+    <!-- FAQ Section -->
+    <section class="faq-section">
+      <h2 class="faq-heading">Frequently Asked Questions</h2>
+      <div class="faq-container">
+        
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Who can participate in Techopedia Lvl 12?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Any college student with a valid student ID card can participate in all events!</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>How do I register for multiple events?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Click on the 'Register' button under each event card to fill out the form individually.</p>
+          </div>
+        </div>
+
+        <div class="faq-item">
+          <button class="faq-question">
+            <span>Will certificates be provided?</span>
+            <span class="faq-icon">+</span>
+          </button>
+          <div class="faq-answer">
+            <p>Yes, all participants will receive official certificates upon completion of events.</p>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- Event Detail Modals -->
+    <div id="modal-inquisitive" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Inquisitive</h2>
+        <p>The ultimate technical quiz competition testing your core computer science knowledge!</p>
+      </div>
+    </div>
+
+    <div id="modal-squabble" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Squabble</h2>
+        <p>Fast-paced debate and trivia battle where wits meet speed!</p>
+      </div>
+    </div>
+
+    <div id="modal-warlash" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Warlash</h2>
+        <p>Competitive LAN gaming & competitive coding tournament!</p>
+      </div>
+    </div>
+
+    <div id="modal-eureka" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Eureka</h2>
+        <p>National-level poster presentation event. Showcase your research and project ideas!</p>
+      </div>
+    </div>
+
+    <div id="modal-vendetta" class="modal">
+      <div class="modal-content">
+        <span class="close-btn">&times;</span>
+        <h2>Vendetta</h2>
+        <p>The Grand Final Showdown Event of Techopedia Lvl 12!</p>
+      </div>
+    </div>
+
+    <!-- Back to Top Floating Button -->
+    <button id="scrollTopBtn" title="Go to top">⬆</button>
 
     <script src="script.js"></script>
   </body>
