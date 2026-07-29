@@ -1,6 +1,6 @@
 document.addEventListener("DOMContentLoaded", () => {
 
-  // 1. Particle Background Animation Canvas
+  // 1. Particle Background Canvas
   const canvas = document.getElementById("particleCanvas");
   if (canvas) {
     const ctx = canvas.getContext("2d");
@@ -54,7 +54,7 @@ document.addEventListener("DOMContentLoaded", () => {
     animateParticles();
   }
 
-  // 2. 3D Mouse Tilt Animation for Event Cards
+  // 2. 3D Mouse Tilt Effect on Event Cards
   const eventCards = document.querySelectorAll(".event-card");
   eventCards.forEach((card) => {
     card.addEventListener("mousemove", (e) => {
@@ -72,19 +72,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 3. FAQ Accordion Toggle Logic
-  const faqQuestions = document.querySelectorAll(".faq-question");
-  faqQuestions.forEach((button) => {
-    button.addEventListener("click", () => {
-      const faqItem = button.parentElement;
-      document.querySelectorAll(".faq-item").forEach((item) => {
-        if (item !== faqItem) item.classList.remove("active");
+  // 3. Purple FAQ Accordion Toggle
+  const purpleFaqBtns = document.querySelectorAll(".purple-faq-btn");
+  purpleFaqBtns.forEach((btn) => {
+    btn.addEventListener("click", () => {
+      const item = btn.parentElement;
+      document.querySelectorAll(".purple-faq-item").forEach((i) => {
+        if (i !== item) i.classList.remove("active");
       });
-      faqItem.classList.toggle("active");
+      item.classList.toggle("active");
     });
   });
 
-  // 4. Countdown Timer Logic (Feb 1, 2027)
+  // 4. Countdown Timer Logic (Target: Feb 1, 2027)
   const targetDate = new Date("Feb 1, 2027 00:00:00").getTime();
   setInterval(() => {
     const now = new Date().getTime();
@@ -127,7 +127,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 6. Live Search Bar Logic
+  // 6. Instant Event Search Logic
   const searchInput = document.getElementById("eventSearch");
   if (searchInput) {
     searchInput.addEventListener("keyup", (e) => {
@@ -165,7 +165,7 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 8. Back to Top Button Logic
+  // 8. Back to Top Floating Button Logic
   const scrollTopBtn = document.getElementById("scrollTopBtn");
   window.onscroll = () => {
     if (document.body.scrollTop > 300 || document.documentElement.scrollTop > 300) {
