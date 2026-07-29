@@ -146,8 +146,8 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 
-  // 7. Modal Popups (Know Details + Register Forms)
-  const modalBtns = document.querySelectorAll(".modal-btn, .reg-btn");
+  // 7. Modal Popups (Know Details Modals)
+  const modalBtns = document.querySelectorAll(".modal-btn");
   const closeBtns = document.querySelectorAll(".close-btn");
 
   modalBtns.forEach((btn) => {
