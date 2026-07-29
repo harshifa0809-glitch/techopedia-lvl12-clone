@@ -17,7 +17,7 @@ body {
   overflow-x: hidden;
 }
 
-/* Background Canvas */
+/* Background Canvas Particles */
 #particleCanvas {
   position: fixed;
   top: 0;
@@ -38,10 +38,10 @@ body {
 }
 
 .hero-banner-img {
-  max-width: 300px;
+  max-width: 320px;
   height: auto;
   margin-bottom: 15px;
-  filter: drop-shadow(0 0 10px rgba(43, 232, 213, 0.3));
+  filter: drop-shadow(0 0 12px rgba(43, 232, 213, 0.4));
 }
 
 .subtitle {
@@ -66,7 +66,7 @@ body {
   text-shadow: 0 0 12px rgba(43, 232, 213, 0.5);
 }
 
-/* Countdown */
+/* Countdown Timer */
 .countdown-container {
   display: flex;
   justify-content: center;
@@ -75,13 +75,13 @@ body {
 }
 
 .timer-box {
-  background: rgba(17, 24, 34, 0.9);
+  background: rgba(17, 24, 34, 0.95);
   border: 1px solid #2be8d5;
   padding: 10px 15px;
   border-radius: 8px;
   min-width: 65px;
   text-align: center;
-  box-shadow: 0 0 12px rgba(43, 232, 213, 0.2);
+  box-shadow: 0 0 12px rgba(43, 232, 213, 0.25);
 }
 
 .timer-box span {
@@ -122,12 +122,12 @@ body {
   color: #fff;
   font-size: 14px;
   outline: none;
-  transition: border-color 0.3s;
+  transition: all 0.3s;
 }
 
 .search-input:focus {
   border-color: #2be8d5;
-  box-shadow: 0 0 10px rgba(43, 232, 213, 0.3);
+  box-shadow: 0 0 12px rgba(43, 232, 213, 0.3);
 }
 
 /* Filter Tabs */
@@ -157,7 +157,7 @@ body {
   box-shadow: 0 0 10px rgba(43, 232, 213, 0.4);
 }
 
-/* 3D Event Cards Container */
+/* Cards Grid Container */
 .events-container {
   display: flex;
   justify-content: center;
@@ -260,8 +260,8 @@ body {
   background-color: #24caa3;
 }
 
-/* FAQ SECTION (Cyan Theme) */
-.faq-section {
+/* FAQ SECTION */
+.purple-faq-section {
   width: 100%;
   max-width: 800px;
   margin: 60px auto 40px auto;
@@ -276,23 +276,22 @@ body {
   margin-bottom: 25px;
 }
 
-.faq-item {
-  background: #111822;
-  border: 1px solid #1f2d3d;
+.purple-faq-item {
+  background: #8b28ff;
+  border-bottom: 1px solid rgba(255, 255, 255, 0.15);
   margin-bottom: 12px;
-  border-radius: 8px;
+  border-radius: 6px;
   overflow: hidden;
-  transition: border-color 0.3s;
 }
 
-.faq-question {
+.purple-faq-btn {
   width: 100%;
-  padding: 18px 20px;
+  padding: 18px 24px;
   background: transparent;
   border: none;
   color: #ffffff;
-  font-size: 15px;
-  font-weight: 500;
+  font-size: 16px;
+  font-weight: 600;
   text-align: left;
   display: flex;
   justify-content: space-between;
@@ -301,10 +300,9 @@ body {
 }
 
 .circle-arrow {
-  width: 28px;
-  height: 28px;
-  border: 1px solid #2be8d5;
-  color: #2be8d5;
+  width: 30px;
+  height: 30px;
+  border: 2px solid #fff;
   border-radius: 50%;
   display: flex;
   align-items: center;
@@ -313,35 +311,29 @@ body {
   transition: transform 0.3s;
 }
 
-.faq-answer {
+.purple-faq-ans {
   display: none;
-  padding: 0 20px 18px 20px;
-  color: #94a3b8;
+  padding: 0 24px 20px 24px;
+  color: #f1f1f1;
   font-size: 13px;
   line-height: 1.6;
 }
 
-.faq-item.active {
-  border-color: #2be8d5;
-}
-
-.faq-item.active .faq-answer {
+.purple-faq-item.active .purple-faq-ans {
   display: block;
 }
 
-.faq-item.active .circle-arrow {
+.purple-faq-item.active .circle-arrow {
   transform: rotate(180deg);
-  background-color: #2be8d5;
-  color: #0b0f15;
 }
 
-/* FOOTER SECTION (Cyan-Dark Theme) */
+/* FOOTER SECTION */
 .main-footer {
   width: 100%;
-  background: #070a0e;
+  background: linear-gradient(180deg, #120722 0%, #07030e 100%);
   padding: 60px 40px 40px 40px;
   margin-top: 60px;
-  border-top: 1px solid rgba(43, 232, 213, 0.2);
+  border-top: 1px solid rgba(139, 40, 255, 0.3);
 }
 
 .footer-container {
@@ -355,16 +347,16 @@ body {
 .footer-logo {
   font-family: "Orbitron", sans-serif;
   font-size: 20px;
-  color: #ffffff;
+  color: #ff2a70;
   line-height: 1.2;
 }
 
 .pixels-text {
-  color: #2be8d5;
+  color: #00f2fe;
 }
 
 .footer-desc {
-  color: #94a3b8;
+  color: #b3a1cf;
   font-size: 12px;
   line-height: 1.6;
   margin-top: 15px;
@@ -384,7 +376,7 @@ body {
   bottom: -6px;
   width: 35px;
   height: 3px;
-  background: #2be8d5;
+  background: #a855f7;
 }
 
 .footer-links {
@@ -396,7 +388,7 @@ body {
 }
 
 .footer-links a {
-  color: #94a3b8;
+  color: #b3a1cf;
   text-decoration: none;
   font-size: 13px;
   transition: color 0.2s;
@@ -414,7 +406,7 @@ body {
 }
 
 .contact-details p {
-  color: #94a3b8;
+  color: #b3a1cf;
   font-size: 12px;
   line-height: 1.6;
 }
@@ -427,8 +419,8 @@ body {
 .query-box textarea {
   width: 100%;
   height: 70px;
-  background: #0f172a;
-  border: 1px solid #1e293b;
+  background: #0d081f;
+  border: 1px solid #3b1b6e;
   border-radius: 4px;
   padding: 10px;
   color: #fff;
@@ -449,14 +441,14 @@ body {
   padding: 10px;
   border: none;
   border-radius: 4px;
-  background: #2be8d5;
-  color: #0b0f15;
+  background: linear-gradient(90deg, #8b28ff 0%, #00d2ff 100%);
+  color: #ffffff;
   font-weight: 600;
   font-size: 13px;
   cursor: pointer;
 }
 
-/* Modals */
+/* Modal Popups */
 .modal {
   display: none;
   position: fixed;
