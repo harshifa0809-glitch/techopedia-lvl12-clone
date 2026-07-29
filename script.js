@@ -72,12 +72,12 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   });
 
-  // 3. Purple FAQ Accordion Toggle
-  const purpleFaqBtns = document.querySelectorAll(".purple-faq-btn");
-  purpleFaqBtns.forEach((btn) => {
+  // 3. FAQ Accordion Toggle (Cyan Theme)
+  const faqBtns = document.querySelectorAll(".faq-btn");
+  faqBtns.forEach((btn) => {
     btn.addEventListener("click", () => {
       const item = btn.parentElement;
-      document.querySelectorAll(".purple-faq-item").forEach((i) => {
+      document.querySelectorAll(".faq-item").forEach((i) => {
         if (i !== item) i.classList.remove("active");
       });
       item.classList.toggle("active");
