@@ -36,10 +36,14 @@ body {
 }
 
 .hero-banner-img {
-  max-width: 340px;
+  max-width: 380px;
+  width: 100%;
   height: auto;
   margin-bottom: 15px;
-  filter: drop-shadow(0 0 12px rgba(43, 232, 213, 0.4));
+  filter: drop-shadow(0 0 15px rgba(43, 232, 213, 0.4));
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .subtitle {
@@ -456,7 +460,8 @@ body {
 }
 
 .footer-banner-img {
-  max-width: 180px;
+  max-width: 200px;
+  width: 100%;
   height: auto;
 }
 
