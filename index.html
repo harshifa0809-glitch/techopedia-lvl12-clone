@@ -1,103 +1,134 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Techopedia Lvl 12 Events - Beyond the Console</title>
-  <link rel="stylesheet" href="styles.css">
-  <link rel="shortcut icon" href="download.ico" type="image/x-icon">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Techopedia Lvl 12 Events - Beyond the Console</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="shortcut icon" href="download.ico" type="image/x-icon" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron:wght@600;800&family=Poppins:wght@300;400;500;600&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Banner Section -->
+    <header class="hero-header">
+      <div class="banner-box">
+        <img src="Hero_banner.png" alt="Hero Banner" class="hero-banner-img" />
+      </div>
 
-  <header class="hero-header">
-    <p class="subtitle">TECHOPEDIA LVL 12 EVENTS</p>
-    <h1 class="main-title">Beyond the <span class="cyan-text">Console</span></h1>
-    
-    <div class="search-container">
-      <span class="search-icon">🔍</span>
-      <input type="text" class="search-input" placeholder="Search events (e.g. Warlash, Quiz)...">
-    </div>
+      <p class="subtitle">TECHOPEDIA LVL 12 EVENTS</p>
+      <h1 class="main-title">
+        Beyond the <span class="cyan-text">Console</span>
+      </h1>
 
-    <div class="filter-tabs">
-      <button class="tab-btn active">All Events</button>
-      <button class="tab-btn">Quizzes</button>
-      <button class="tab-btn">Gaming & Coding</button>
-      <button class="tab-btn">Flagship</button>
-    </div>
-  </header>
+      <!-- Countdown Timer Section -->
+      <div class="countdown-container">
+        <div class="timer-box">
+          <span id="days">00</span>
+          <p>Days</p>
+        </div>
+        <div class="timer-box">
+          <span id="hours">00</span>
+          <p>Hours</p>
+        </div>
+        <div class="timer-box">
+          <span id="minutes">00</span>
+          <p>Mins</p>
+        </div>
+        <div class="timer-box">
+          <span id="seconds">00</span>
+          <p>Secs</p>
+        </div>
+      </div>
 
-  <main class="events-container">
-    
-    <!-- Card 1: Inquisitive -->
-    <div class="event-card">
-      <div class="card-image-box">
-        <img src="download1.png" alt="Inquisitive">
+      <div class="search-container">
+        <span class="search-icon">🔍</span>
+        <input
+          type="text"
+          class="search-input"
+          placeholder="Search events (e.g. Warlash, Quiz)..."
+        />
       </div>
-      <h3 class="event-title">Inquisitive</h3>
-      <p class="event-desc">The ultimate technical quiz competition.</p>
-      <div class="btn-group">
-        <button class="btn-outline">Know Details</button>
-        <button class="btn-filled">Register</button>
-      </div>
-    </div>
 
-    <!-- Card 2: Squabble -->
-    <div class="event-card">
-      <div class="card-image-box">
-        <img src="Squabble.png" alt="Squabble">
+      <div class="filter-tabs">
+        <button class="tab-btn active">All Events</button>
+        <button class="tab-btn">Quizzes</button>
+        <button class="tab-btn">Gaming & Coding</button>
+        <button class="tab-btn">Flagship</button>
       </div>
-      <h3 class="event-title">Squabble</h3>
-      <p class="event-desc">Fast-paced debate and trivia battle.</p>
-      <div class="btn-group">
-        <button class="btn-outline">Know Details</button>
-        <button class="btn-filled">Register</button>
-      </div>
-    </div>
+    </header>
 
-    <!-- Card 3: Warlash -->
-    <div class="event-card">
-      <div class="card-image-box">
-        <img src="download2.png" alt="Warlash">
+    <main class="events-container">
+      <!-- Card 1: Inquisitive -->
+      <div class="event-card">
+        <div class="card-image-box">
+          <img src="download1.png" alt="Inquisitive" />
+        </div>
+        <h3 class="event-title">Inquisitive</h3>
+        <p class="event-desc">The ultimate technical quiz competition.</p>
+        <div class="btn-group">
+          <button class="btn-outline">Know Details</button>
+          <button class="btn-filled">Register</button>
+        </div>
       </div>
-      <h3 class="event-title">Warlash</h3>
-      <p class="event-desc">Competitive LAN & coding tournament.</p>
-      <div class="btn-group">
-        <button class="btn-outline">Know Details</button>
-        <button class="btn-filled">Register</button>
-      </div>
-    </div>
 
-    <!-- Card 4: Eureka (Glowing Card) -->
-    <div class="event-card highlight-glow">
-      <div class="card-image-box">
-        <img src="download3.png" alt="Eureka">
+      <!-- Card 2: Squabble -->
+      <div class="event-card">
+        <div class="card-image-box">
+          <img src="Squabble.png" alt="Squabble" />
+        </div>
+        <h3 class="event-title">Squabble</h3>
+        <p class="event-desc">Fast-paced debate and trivia battle.</p>
+        <div class="btn-group">
+          <button class="btn-outline">Know Details</button>
+          <button class="btn-filled">Register</button>
+        </div>
       </div>
-      <h3 class="event-title">Eureka</h3>
-      <p class="event-desc">National-level poster presentation.</p>
-      <div class="btn-group">
-        <button class="btn-outline">Know Details</button>
-        <button class="btn-filled">Register</button>
-      </div>
-    </div>
 
-    <!-- Card 5: Vendetta -->
-    <div class="event-card">
-      <div class="card-image-box">
-        <img src="download4.png" alt="Vendetta">
+      <!-- Card 3: Warlash -->
+      <div class="event-card">
+        <div class="card-image-box">
+          <img src="download2.png" alt="Warlash" />
+        </div>
+        <h3 class="event-title">Warlash</h3>
+        <p class="event-desc">Competitive LAN & coding tournament.</p>
+        <div class="btn-group">
+          <button class="btn-outline">Know Details</button>
+          <button class="btn-filled">Register</button>
+        </div>
       </div>
-      <h3 class="event-title">Vendetta</h3>
-      <p class="event-desc">The Grand Final Showdown Event.</p>
-      <div class="btn-group">
-        <button class="btn-outline">Know Details</button>
-        <button class="btn-filled">Register</button>
+
+      <!-- Card 4: Eureka (Fixed Image Path) -->
+      <div class="event-card highlight-glow">
+        <div class="card-image-box">
+          <img src="download3.png" alt="Eureka" />
+        </div>
+        <h3 class="event-title">Eureka</h3>
+        <p class="event-desc">National-level poster presentation.</p>
+        <div class="btn-group">
+          <button class="btn-outline">Know Details</button>
+          <button class="btn-filled">Register</button>
+        </div>
       </div>
-    </div>
 
-  </main>
+      <!-- Card 5: Vendetta -->
+      <div class="event-card">
+        <div class="card-image-box">
+          <img src="download4.png" alt="Vendetta" />
+        </div>
+        <h3 class="event-title">Vendetta</h3>
+        <p class="event-desc">The Grand Final Showdown Event.</p>
+        <div class="btn-group">
+          <button class="btn-outline">Know Details</button>
+          <button class="btn-filled">Register</button>
+        </div>
+      </div>
+    </main>
 
-  <script src="script.js"></script>
-</body>
+    <script src="script.js"></script>
+  </body>
 </html>
